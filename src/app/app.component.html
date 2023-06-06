@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="selectcontainer">
+    <mat-form-field appearance="fill">
+      <mat-label>Word Type</mat-label>
+      <mat-select (selectionChange)="onWordsSelected($event)">
+        <mat-option *ngFor="let wordtype of listWordTypes" (ngModel)="wordtype" [value]="wordtype">
+          {{wordtype.Types}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Words</mat-label>
+      <mat-select (selectionChange)="onTypeSelected($event)">
+        <mat-option *ngFor="let words of listWords" (ngModel)="words" [value]="words">
+          {{words.Word}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <p id="myParagraph"></p>
+  </div>
+
+  <div>
+    <div class="example-button-row">
+      <button mat-raised-button color="primary" (click)="onSubmit()">Save</button>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <h1>Saved Sentences</h1>
+    <ul>
+      <li *ngFor="let sentence of listSentences">{{ sentence.Sentence }}</li>
+    </ul>
+  </div>
+</div>

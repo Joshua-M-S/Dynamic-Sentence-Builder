@@ -1,0 +1,57 @@
+.wrapper {
+  background-color: pink;
+  padding: 20px;
+}
+
+.selectcontainer {
+  margin-bottom: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-label {
+  font-weight: bold;
+}
+
+mat-select {
+  width: 100%;
+}
+
+mat-option {
+  cursor: pointer;
+}
+
+#myParagraph {
+  color: #333;
+  font-size: 18px;
+}
+
+.example-button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
